@@ -12,8 +12,11 @@ module.exports = (arg) => {
     if (processName && typeof processName === 'string') {
 
         // Set up a new process, 'processName', and return ready/notReady functions
-        ready[processName] = false;
-        if (test) console.log('  ', elapsed(),'added',processName,'(not ready)');
+        if (typeof ready[processName] === 'undefined') {
+            ready[processName] = false;
+            if (test) console.log('  ', elapsed(),'added',processName,'(not ready)');
+        } else if (test) console.log('  ', elapsed(),processName, 'referred to again in separate module');
+            
 
         return {
             ready: () => {

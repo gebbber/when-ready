@@ -12,5 +12,6 @@ whenReady(() => {
     console.log('This is callback 2.');
 });
 
-require('./process.js');
+require('./process1-a.js');
+require('./process1-b.js');
 require('./process2.js');
