@@ -1,6 +1,6 @@
 {
   "name": "@gebbber/when-ready",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wait for processes to be ready, then run queued callbacks",
   "main": "index.js",
   "scripts": {
