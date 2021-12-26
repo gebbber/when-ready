@@ -1,6 +1,6 @@
 ## General Use:
 ```javascript
-const { whenReady } = require('..')();
+const { whenReady } = require('@gebbber/when-ready')();
 
 // When ready, do two things...
 whenReady(() => {
@@ -21,7 +21,7 @@ require('./process2.js');
 ```javascript
 // process.js
 
-const {ready, notReady} = require('..')('process1');
+const {ready, notReady} = require('@gebbber/when-ready')('process1');
 
 notReady();
 
@@ -34,7 +34,7 @@ setTimeout(() => {
 ## `process2` is ready after 3 seconds:
 ```javascript
 // process2.js
-const {ready} = require('..')('process2');
+const {ready} = require('@gebbber/when-ready.')('process2');
 
 setTimeout(() => {
     ready();
