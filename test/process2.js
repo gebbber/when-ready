@@ -1,4 +1,4 @@
-const {ready} = require('..')('process2');
+const {ready} = require('..')()('process2');
 
 // notReady(); is optional
 
